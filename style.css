@@ -1,0 +1,38 @@
+body {
+	background-color: #A9A5A2
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+h2, p {
+	text-align: center;	
+}
+
+.programming {
+	width: 150px;
+	height: 150px;
+}
+
+.games {
+	width: 100px;
+	height: 100px;
+}
+
+#battleship {
+	width: 300px;
+}
+
+.div-programming {
+	display: grid;
+	grid-template-columns: auto auto;
+	text-align: center;
+}
+
+.div-games {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	text-align: center;
+}
