@@ -1,33 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>CoreDump</title>
+	<meta charset="utf-8"/>
+	<title>MicroJuegos</title>
+
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Materialize -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+	<!-- Scripts -->
+	<script type="text/javascript" src="main.js" defer></script>
+	
 </head>
 <body>
-	<div>
-		<br>
+	<div class="page">
 		
-		<h1>Hello World!!</h1>
-
-		<br><br>
-
-		<div>
-			<h2>Programming</h2>
-			<div class="div-programming">
-				<a href="https://gitlab.com/JorgeLS" target="_blank"><img class="programming" src="Media/GitLab.png"></a>
-				<a href="https://github.com/JLoarteS" target="_blank"><img class="programming" src="Media/GitHub.png"></a>				
-			</div>
+		<!-- Floating button -->
+		<div class="fixed-action-btn">
+			<a id="upButton" class="btn-floating btn-large red">
+				<i class="large material-icons" title="Go to top">↑</i>				
+			</a>
 		</div>
 
-		<div>
-			<h2>Games</h2>
-			<div class="div-games">
-				<a href="PageNotFound.html"><img id="snake" class="games" src="Media/Snake.png"></a>
-				<a href="PageNotFound.html"><img id="battleship" class="games" src="Media/Battleship.png"></a>
-				<a href="PageNotFound.html"><img id="chess" class="games" src="Media/Chess.png"></a>				
-			</div>		
-		</div>		
+		<!-- Title -->
+		<nav>
+			<div class="nav-wrapper">
+			  <a href="#" class="brand-logo">MicroJuegos</a>
+			  <ul id="nav-mobile" class="right hide-on-med-and-down">
+				<li><a href="https://github.com/JLoarteS" target="_blank">GitHub</a></li>
+				<li><a href="https://gitlab.com/JorgeLS" target="_blank">GitLab</a></li>
+				<li><a id="creditos">Creditos</a></li>
+			  </ul>
+			</div>
+		</nav>
+
+		<!-- https://rapidapi.com/stefan.skliarov/api/GameDatabase -->
+		<br><br>
+		<div class="games">
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="card left">
+						<div class="card-image center">
+							<a href="PageNotFound.html"><img src="Media/Snake.png"></img></a>
+							<p>Snake, fácil y sencillo.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card left">
+						<div class="card-image center">
+							<a href="PageNotFound.html"><img src="Media/Chess.png"></img></a>
+							<p>Ajedrez. No hay que contar mucho más.</p>
+						</div>
+				  	</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card left">
+						<div class="card-image center">
+							<a href="PageNotFound.html"><img src="Media/Battleship.png"></img></a>
+							<p>Juego de los Barquitos.</p>
+						</div>
+				  	</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card left">
+						<div class="card-image center">
+							<a href="PageNotFound.html"><img src="Media/Error.png"></img></a>
+							<p>Error (solo para rellenar).</p>
+						</div>
+				  	</div>
+				</div>
+			</div>			
+			<div class="row">
+				<div class="col s12 m3">
+					<div class="card left">
+						<div class="card-image center">
+							<a href="PageNotFound.html"><img src="Media/Error.png"></img></a>
+							<p>Error (solo para rellenar).</p>
+						</div>
+				  	</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card left">
+						<div class="card-image center">
+							<a href="PageNotFound.html"><img src="Media/Error.png"></img></a>
+							<p>Error (solo para rellenar).</p>
+						</div>
+				  	</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card left">
+						<div class="card-image center">
+							<a href="PageNotFound.html"><img src="Media/Error.png"></img></a>
+							<p>Error (solo para rellenar).</p>
+						</div>
+				  	</div>
+				</div>
+				<div class="col s12 m3">
+					<div class="card left">
+						<div class="card-image center">
+							<a href="PageNotFound.html"><img src="Media/Error.png"></img></a>
+							<p>Error (solo para rellenar).</p>
+						</div>
+				  	</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </body>
 </html>

@@ -1,38 +1,14 @@
 body {
-	background-color: #A9A5A2
+	background-color: gray;
 }
 
-h1 {
-	text-align: center;
-	text-decoration: underline;
+.brand-logo {
+	margin-left: 20px;
 }
 
-h2, p {
-	text-align: center;	
-}
-
-.programming {
-	width: 150px;
-	height: 150px;
-}
-
-.games {
-	width: 100px;
-	height: 100px;
-}
-
-#battleship {
-	width: 300px;
-}
-
-.div-programming {
-	display: grid;
-	grid-template-columns: auto auto;
-	text-align: center;
-}
-
-.div-games {
-	display: grid;
-	grid-template-columns: auto auto auto;
-	text-align: center;
+.row {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
 }
