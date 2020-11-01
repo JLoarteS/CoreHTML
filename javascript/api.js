@@ -33,7 +33,7 @@ function getInfoGame(game) {
 	}).then((response) => { return response.json()
     }).then( data => {
 
-        const {name, released, description, rating, background_image} = data
+        const {name, released, background_image, description, rating, metacritic} = data
 
         // Adding Content
         div.innerHTML =
@@ -43,7 +43,13 @@ function getInfoGame(game) {
                 "<img class=\"background_image\" src=\"" + background_image + "\"></img>" +
                 description +
             "</div>" +
-            "<p class=\"rating\">Rating: " + rating + "</p>"
+            "<p class=\"rating\">Calificación: " + rating +
+                " <span class=\"star-rating\">" + addRating(rating) + "</span>" +
+            "</p>"
+
+        if (metacritic != undefined)
+            div.innerHTML +=
+                "<p class=\"metacritic\">Metacritic: " + metacritic + "</p>"
     })
 }
 
@@ -54,4 +60,18 @@ function findGame(item) {
             return i
             
     return -1
+}
+
+function addRating(rating) {
+    rating = Math.trunc(rating)
+    txt = ""
+    for (let i = 0; i < 5; i++)
+    {
+        if (i < rating)
+            txt += "&starf;"
+        else
+            txt += "&star;"
+    }
+
+    return txt
 }

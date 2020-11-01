@@ -26,6 +26,12 @@
     text-align: center;
 }
 
+#api .background_image {
+    width: 300px;
+    height: 100%;
+    float: right;
+}
+
 #api .description p {
     text-align: left;
     margin-right: 310px;
@@ -33,10 +39,14 @@
 
 #api .rating {
     text-align: left;
+    font-size: 20px;
 }
 
-#api .background_image {
-    width: 300px;
-    height: 100%;
-    float: right;
+#api .rating .star-rating {
+    color: firebrick;
+}
+
+#api .metacritic {
+    text-align: left;
+    font-size: 20px;
 }
