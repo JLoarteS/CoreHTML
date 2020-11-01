@@ -1,0 +1,42 @@
+.chooser {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.chooser-collection {
+    gap: 4px;
+    display: grid;
+    justify-content: center;
+}
+.chooser-item {
+    width: 250px;
+    background-color: tomato;
+    color: white;
+}
+.chooser-item:hover {
+    background-color: lightcoral;
+    transition: .2s all ease-in-out;
+}
+.active {
+    background-color: firebrick;
+}
+
+#api {
+    padding: 0px 20px 20px 20px;
+    text-align: center;
+}
+
+#api .description p {
+    text-align: left;
+    margin-right: 310px;
+}
+
+#api .rating {
+    text-align: left;
+}
+
+#api .background_image {
+    width: 300px;
+    height: 100%;
+    float: right;
+}

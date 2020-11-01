@@ -11,6 +11,15 @@ body {
 	height: 200px;
 }
 
+img.responsive-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.material-placeholder {
+	text-align: center;
+}
+
 .alert {
 	position: fixed;
 	top: 10%;

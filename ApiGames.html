@@ -4,12 +4,53 @@
         <meta charset="utf-8"/>
         <title>Api Games</title>
 
+	    <!-- CSS -->
+	    <link rel="stylesheet" type="text/css" href="css/style.css">
+	    <link rel="stylesheet" type="text/css" href="css/api.css">
+	    <!-- Materialize -->
+	    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	    <!-- Scripts -->
+        <script type="text/javascript" src="javascript/main.js" defer></script>
+        <script type="text/javascript" src="javascript/games.js"></script>
         <script type="text/javascript" src="javascript/api.js" defer></script>
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
-        <button onclick="getInfo()">HOla muy buenas</button>
-
-        <div id="api"></div>
+        <div>
+            <!-- Floating button -->
+            <div class="fixed-action-btn">
+                <a class="btn-floating btn-large red" href="#">
+                    <i class="large material-icons">arrow_upward</i>
+                </a>
+            </div>
+            <!-- Navigation bar -->
+            <nav>
+                <div class="nav-wrapper">
+                  <a href="#" class="brand-logo">MicroJuegos</a>
+                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="https://github.com/JLoarteS" target="_blank">GitHub</a></li>
+                    <li><a href="https://gitlab.com/JorgeLS" target="_blank">GitLab</a></li>
+                    <li><a id="creditos">Creditos</a></li>
+                  </ul>
+                </div>
+            </nav>
+            <div class="chooser">
+                <br>
+                <h4>Elige un Juego</h4>
+                <br><br>
+                <div class="chooser-collection">
+                    <!--
+                    <a class="chooser-item">Tetris</a>
+                    -->
+                </div>
+                <br><br>
+                <a class="waves-effect waves-light btn red infoBtn">Mostrar Información</a>
+            </div>
+            <br>
+            <div id="api"></div>
+        </div>
     </body>
 </html>
